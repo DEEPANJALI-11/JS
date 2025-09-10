@@ -58,3 +58,35 @@ console.log(Object.entries(newuser)); //[ [ 'id', '123abc' ], [ 'name', 'sunny' 
 console.log(newuser.hasOwnProperty('isloggedin')); //false
 
 
+const course={
+    coursename:"js in hindi",
+    courseprice:999,
+    courseinstructor:"Hitesh"
+}
+
+console.log(course["courseinstructor"]); //hitesh
+//or we can write like this
+const {courseinstructor}=course //object destructure 
+console.log(courseinstructor); //hitesh
+const {courseinstructor:teacher}=course
+console.log(teacher); //hitesh
+
+//react
+// const navbar=({company})=>{ //destructure
+
+// }
+// navbar(company="htesh")
+
+//API 
+//json
+// {
+//     "name":"deepa",
+//     "coursename":"js in hindi",
+//     "price":"free"
+// }
+//in form of array
+// [
+//     {},
+//     {},
+//     {}
+// ]
