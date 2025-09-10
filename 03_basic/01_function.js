@@ -10,11 +10,11 @@
  function add(number1, number2){
     // console.log(number1+number2) //its not return
  }
-//  add(3,4)//7
-//  add(3,"4") //34
-//  add(3,"a") //3a as we are not checking the datatype
-//  const res=add(3,6) //9
-//  console.log(res); //undefined
+ add(3,4)//7
+ add(3,"4") //34
+ add(3,"a") //3a as we are not checking the datatype
+ const res=add(3,6) //9
+ console.log(res); //undefined
  
 
  function sum2(number1, number2){
@@ -28,15 +28,15 @@
 
 //another way
 
-// function loginusermessage(username ="Sam"){ //sam is a default value so it will never go to checkthe condition  
-//     if(username===undefined){ //(!username)
-//         console.log("Please enter a user name");
-//         return
-//     }
-//     return `${username} just loggedin`
-// }
-// console.log(loginusermessage("Deepa")) //Deepa just loggedin
-// console.log(loginusermessage()); //undefined just loggedin
+function loginusermessage(username ="Sam"){ //sam is a default value so it will never go to checkthe condition  
+    if(username===undefined){ //(!username)
+        console.log("Please enter a user name");
+        return
+    }
+    return `${username} just loggedin`
+}
+console.log(loginusermessage("Deepa")) //Deepa just loggedin
+console.log(loginusermessage()); //undefined just loggedin
 
 
 function calculatecartprice(...num1){ //rest or spread operator
