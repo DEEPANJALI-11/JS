@@ -31,3 +31,7 @@ const myfunction=function(){
 }
 console.log(myfunction)
 console.log(typeof myfunction) //function
+
+
+
+
