@@ -40,7 +40,7 @@ const chai=()=>{ //arrow function
 chai()
 // explicit return
 const add=(num1, num2)=>{
-    return num1+num2
+    return num1+num2 //have to use return as we are opening new scope
 }
 console.log(add(3,4));
  //{} return, () no return
