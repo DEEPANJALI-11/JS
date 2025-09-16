@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+    <style>
+        .bg{
+            background-color: black;
+            color:aliceblue
+        }
+
+        
+    </style>
+</head>
+<body class="bg">
+    <ul class="lang">
+        <li>javascript</li>
+    </ul>
+</body>
+<script>
+        function addLang(langname){
+            const l1=document.createElement('li')
+            l1.innerHTML= `${langname}`
+            document.querySelector('.lang'). //class name
+            appendChild(l1)
+        }
+            addLang("Python")
+            addLang("cpp")
+
+//optimized approach
+        function addopti(langname){
+            const li=document.createElement('li')
+            li.appendChild(document.createTextNode(langname))
+            document.querySelector('.lang').appendChild(li)
+        }
+
+        addopti("java")
+
+        function fun(lang){
+            let li=document.createElement('li')
+            li.appendChild(document.createTextNode(lang))
+            document.querySelector('.lang').appendChild(li)
+        }
+
+        fun("Ruby")
+
+//Edit
+        const seclang=document.querySelector("Li:nth-child(2)")
+        seclang.innerHTML="mojo"  //not optimized
+    //second approach
+    const newli=document.createElement('li')
+    newli.textContent="c"
+    seclang.replaceWith(newli)
+
+        //third approach
+        const firstlang=document.querySelector("li:first-child")
+        firstlang.outerHTML='<li>TYPESCRIPT</li>'
+
+        const child=document.querySelector('li:nth-child(3)')
+        child.innerHTML="javascript"
+
+        //remove
+        const lastlang=document.querySelector('li:last-child')
+        lastlang.remove()
+
+    // const abc=document.createElement('div')
+    // abc.style.backgroundColor="green"
+    // const ab=document.createElement('div')
+    // ab.style.backgroundColor="blue"
+    // const text=document.createTextNode("heyyyy")
+    // const text2=document.createTextNode("heyyy2")
+    // abc.appendChild(text2)
+    // ab.appendChild(text)
+    // document.body.appendChild(abc)
+    // document.body.appendChild(ab)
+
+</script>
+</html>
