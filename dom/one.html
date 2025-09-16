@@ -12,11 +12,37 @@
         }
     </style>
 </head>
-<body class="bg">
-    <div >
-        <h1 id="title" class="heading">DOM learning with chai and code</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit deleniti est odio reprehenderit dolores, temporibus minus nobis rerum error vitae totam ab animi laudantium atque facilis alias quasi incidunt obcaecati?</p>
-
+<body class="bg" >
+    <div class="parent">
+        <!-- hbcsb -->
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thrusday</div>
+        <div class="day">Friday</div>
     </div>
 </body>
+<script>
+    const parent=document.querySelector('.parent')
+    // console.log(parent);
+    // console.log(parent.children);
+    // console.log(parent.children[1].innerHTML);
+    
+    // for (let i = 0; i < parent.children.length; i++) {
+    //     console.log(parent.children [i].innerHTML);
+        
+    // }
+    parent.children[1].style.color="orange"
+    //console.log(parent.firstElementChild);
+    //console.log(parent.lastElementChild.innerHTML);
+    
+    const day1=document.querySelector('.day')
+    // console.log(day1);
+    // console.log(day1.parentElement);
+    // console.log(day1.nextElementSibling);
+    console.log("NODES:",parent.childNodes); //NodeList(13),its a tree structure every enter is a value for node
+    
+    
+    
+</script>
 </html>
