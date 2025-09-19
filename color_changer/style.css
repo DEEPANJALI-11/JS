@@ -1,0 +1,42 @@
+html, body {
+  height: 100%;          /* make them fill the whole screen */
+  margin: 0;             /* remove default margin */
+  padding: 0;
+}
+
+.main{
+    display:block
+}
+.button{
+    width:100px;
+    height:100px;
+    border:solid black;
+    display:inline-block
+}
+
+#gray{
+    background-image: url("https://www.postergully.com/cdn/shop/products/396b43fcf58dcc36d2ce0c52eb0ca2af.jpg?v=1578638667&width=1445");
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+}
+#black{
+    background-image: url("https://static01.nyt.com/images/2022/05/04/arts/04doctor-strange-guide1/04doctor-strange-guide1-mediumSquareAt3X.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    background-color: black;
+}
+#pink{
+    background-image:url("https://www.sideshow.com/storage/product-images/910233/black-panther-deluxe_marvel_square.jpg") ;
+    background-color: pink;
+background-size: cover;
+    background-position: center;
+    border-radius: 8px;}
+#red{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdNEtWHFx9IkQS6VtgZhe6Unxk7OFWosSyhg&s");
+    background-color: red;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+}
