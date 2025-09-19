@@ -120,7 +120,7 @@ getAllUsers()
 
 //same code with .then and .catch
 
-fetch ('https://jsonplaceholder.typicode.com/users')
+fetch ('https://jsonplaceholder.typicode.com/users') 
 .then((response)=>{
     return response.json()
 })
@@ -129,3 +129,7 @@ fetch ('https://jsonplaceholder.typicode.com/users')
 
 })
 .catch((error)=>console.log(error))
+
+// the output of fetch operation comes at first then all async function gives output, Cause 
+// a new queue is formed *micro task queue*  apart from task queue  in for fetch operations,  so the call back queue of fetch
+// queue which comes from web browser will have highest priority in js engine
