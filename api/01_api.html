@@ -11,14 +11,30 @@
 <script>
     const requrl='https://api.github.com/users/Deepanjali'
     const xhr=new XMLHttpRequest()
+   // requrl → the GitHub API endpoint for the user profile
+    //XMLHttpRequest() → old way of making HTTP requests (before fetch).
     xhr.open('GET',requrl)
+   // Prepares a GET request to the given URL.
+    //Does not send it yet — just sets it up.
+
+//     onreadystatechange is called every time the request’s state changes.
+// xhr.readyState has 5 possible values:
+// 0 → UNSENT (created but not opened)
+// 1 → OPENED (request set up with open)
+// 2 → HEADERS_RECEIVED (response headers received)
+// 3 → LOADING (downloading response)
+// 4 → DONE (request finished)
+// So you’ll see logs 1, 2, 3, 4.
     xhr.onreadystatechange=function(){
         console.log(xhr.readyState)
         if(xhr.readyState===4){
             const data=JSON.parse(this.responseText)
             console.log(data.followers);
-            
-            console.log(this.responseText());
+//             When readyState === 4, the request is done.
+// this.responseText (or xhr.responseText) contains the raw response as a string.
+// JSON.parse(...) converts it into a JS object.
+// Now you can access properties like data.followers.
+            console.log(this.responseText);
             
         }
         
