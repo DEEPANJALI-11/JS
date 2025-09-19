@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>chai or code </h1>
-    <button id="stop">Click me</button>
+    <button id="stop">stop</button>
     <button id="start">Start</button>
 </body>
 <script>
@@ -15,7 +15,21 @@
         console.log("Deepanajali",Date.now());
         
     }
-    setInterval(sayname,2000)
+    // const run=setInterval(sayname,2000)
+
+   // const Intervalid=(sayname,2000,"hii")
+    // clearInterval(Intervalid)
+    const start=document.querySelector('#start')
+    const stop=document.querySelector('#stop')
+    let name
+    start.addEventListener('click',function(){
+        name= setInterval(sayname,2000)
+    })
+    stop.addEventListener('click',function(){
+        clearInterval(name)
+        console.log("stopped");
+        
+    })
 </script>
     
 </html>
